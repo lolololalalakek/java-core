@@ -20,7 +20,7 @@ public class FlightService {
             }
         }
         //эконом-класс, (10 рядов по 6 мест) (A–F)
-        for (int i = 6; i <= 15; i++) {
+        for (int i = 6; i <= 21; i++) {
             for (char c = 'A'; c <= 'F'; c++) {
                 seats.add(new Seat(i + String.valueOf(c), "Economy", false, null));
             }
@@ -36,7 +36,7 @@ public class FlightService {
         }
 
         System.out.println("\n=== ECONOMY CLASS ===\n");
-        for (int i = 6; i <= 15; i++) {
+        for (int i = 6; i <= 21; i++) {
             printRow(i, new char[]{'A', 'B', 'C', 'D', 'E', 'F'});
         }
 
